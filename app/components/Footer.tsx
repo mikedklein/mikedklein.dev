@@ -1,10 +1,12 @@
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4 text-center">
-        <p>&copy; {new Date().getFullYear()} Mike Klein. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} Mike Klein. All rights reserved.
+        </p>
         <div className="mt-4 flex justify-center space-x-4">
           <a
             href="https://github.com/mikedklein"
@@ -24,7 +26,10 @@ const Footer = () => {
             <Linkedin className="w-6 h-6" />
             <span className="sr-only">LinkedIn</span>
           </a>
-          <a href="mailto:your.email@example.com" className="text-pink-500 hover:text-pink-400">
+          <a
+            href="mailto:mdavidkleinjr@gmail.com"
+            className="text-pink-500 hover:text-pink-400"
+          >
             <Mail className="w-6 h-6" />
             <span className="sr-only">Email</span>
           </a>
@@ -36,8 +41,7 @@ const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
-
+export default Footer;
